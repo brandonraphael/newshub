@@ -2,8 +2,31 @@ var express = require('express')
 var app = express();
 var request = require('request');
 var striptags = require("striptags");
+var bodyParser = require('body-parser');
 let cheerio = require('cheerio');
 let $ = cheerio.load('<h2 class="title">Hello world</h2>');
+const MongoClient = require('mongodb').MongoClient
+var db;
+
+app.use(bodyParser());
+
+MongoClient.connect('mongodb://admin:admin@ds157439.mlab.com:57439/newshub', (err, database) => {
+  if (err) return console.log(err);
+  db = database;
+
+  app.listen(8000, function () {
+    console.log('Example app listening on port 8000!')
+  })
+})
+
+app.post('/comments', (req, res) => {
+  console.log(req.body.url);
+  db.collection("comments").save(req.body, (err, result) => {
+    if (err) return console.log(err)
+    console.log('saved to database')
+    res.redirect('http://localhost:3000:' + req.body.url)
+  })
+})
 
 app.all('/', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -211,8 +234,4 @@ app.get('/the-washington-post', function (req, res) {
       res.send("Error");
     }
   })
-})
-
-app.listen(8000, function () {
-  console.log('Example app listening on port 8000!')
 })
