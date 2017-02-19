@@ -1,0 +1,42 @@
+.Homepage {
+  position: relative;
+  top: 35px;
+  text-align: left;
+  left: 0px;
+}
+
+#sources {
+  position: relative;
+  text-align: center;
+  z-index: 6;
+  width: 175px;
+  left: 0px;
+  padding: 10.5px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e0e0e0;
+  font-weight: bold;
+}
+
+#tabs {
+  width: calc(100% - 175px);
+  position: absolute;
+  left: 175px;
+  top: 0px;
+}
+
+#sourceList {
+  position: relative;
+  top: 0px;
+  left: 10px;
+  width: 175px;
+  padding-top: 10px;
+}
+
+#new {
+  position: relative;
+  top: 0px;
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+}

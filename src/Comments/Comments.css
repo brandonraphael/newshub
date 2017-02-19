@@ -1,0 +1,10 @@
+.Comments {
+  position: relative;
+  top: 40px;
+}
+
+#addComment {
+  position: relative;
+  left: 10px;
+  text-align: left;
+}
