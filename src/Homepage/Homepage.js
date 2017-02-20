@@ -39,6 +39,14 @@ class Homepage extends Component {
           <br/>
           <a href="#/cnn">CNN</a>
           <br/>
+          <a href="#/daily-mail">Daily Mail</a>
+          <br/>
+          <a href="#/engadget">Engadget</a>
+          <br/>
+          <a href="#/entertainment-weekly">Entertainment Weekly</a>
+          <br/>
+          <a href="#/espn">ESPN</a>
+          <br/>
           <a href="#/the-guardian-uk">The Guardian (UK)</a>
           <br/>
           <a href="#/the-new-york-times">The New York Times</a>

@@ -25,6 +25,10 @@ class App extends Component {
           <Route path='/buzzfeed' component={LinkList} source="buzzfeed"/>
           <Route path='/cnbc' component={LinkList} source="cnbc"/>
           <Route path='/cnn' component={LinkList} source="cnn"/>
+          <Route path='/daily-mail' component={LinkList} source="daily-mail"/>
+          <Route path='/engadget' component={LinkList} source="engadget"/>
+          <Route path='/entertainment-weekly' component={LinkList} source="entertainment-weekly"/>
+          <Route path='/espn' component={LinkList} source="espn"/>
           <Route path='/the-guardian-uk' component={LinkList} source="the-guardian-uk"/>
           <Route path='/the-new-york-times' component={LinkList} source="the-new-york-times"/>
           <Route path='/the-wall-street-journal' component={LinkList} source="the-wall-street-journal"/>

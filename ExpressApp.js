@@ -19,13 +19,17 @@ MongoClient.connect('mongodb://admin:admin@ds157439.mlab.com:57439/newshub', (er
   })
 })
 
-app.post('/comments', (req, res) => {
-  console.log(req.body.url);
-  db.collection("comments").save(req.body, (err, result) => {
+app.post('/comments', function (req, res) {
+  db.collection(String(req.body.url.substring(1))).save(req.body, (err, result) => {
     if (err) return console.log(err)
     console.log('saved to database')
-    res.redirect('http://localhost:3000:' + req.body.url)
+    res.redirect('http://localhost:3000/#' + req.body.url)
   })
+})
+
+app.get('/comments', function (req, res) {
+  // db.get(req.body.url.substring(1));
+  console.log("whatever");
 })
 
 app.all('/', function(req, res, next) {
@@ -178,6 +182,54 @@ app.get('/cnbc', function (req, res) {
 
 app.get('/cnn', function (req, res) {
   var articleLink = 'https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e';
+  request(articleLink, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.send(body);
+    }
+    else {
+      res.send("Error");
+    }
+  })
+})
+
+app.get('/daily-mail', function (req, res) {
+  var articleLink = 'https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e';
+  request(articleLink, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.send(body);
+    }
+    else {
+      res.send("Error");
+    }
+  })
+})
+
+app.get('/engadget', function (req, res) {
+  var articleLink = 'https://newsapi.org/v1/articles?source=engadget&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e';
+  request(articleLink, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.send(body);
+    }
+    else {
+      res.send("Error");
+    }
+  })
+})
+
+app.get('/entertainment-weekly', function (req, res) {
+  var articleLink = 'https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e';
+  request(articleLink, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.send(body);
+    }
+    else {
+      res.send("Error");
+    }
+  })
+})
+
+app.get('/espn', function (req, res) {
+  var articleLink = 'https://newsapi.org/v1/articles?source=espn&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e';
   request(articleLink, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       res.send(body);
