@@ -21,14 +21,14 @@ class LinkList extends Component {
   componentDidMount() {
     var src = this.determineSource();
 
-    $.get('http://localhost:8000/' + src).done(function(data) {
+    $.get('https://newsapi.org/v1/articles?source=' + src + '&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e').done(function(data) {
       this.setState({data: data});
     }.bind(this));
   }
 
   render() {
     if(this.state.data){
-      var data = JSON.parse(this.state.data);
+      var data = this.state.data;
       var rows = [];
       for( var i = 0; i < data.articles.length; i++){
         rows.push(<Link key={i.toString()} article={data.articles[i]}></Link>)

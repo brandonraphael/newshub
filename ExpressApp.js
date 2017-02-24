@@ -20,16 +20,19 @@ MongoClient.connect('mongodb://admin:admin@ds157439.mlab.com:57439/newshub', (er
 })
 
 app.post('/comments', function (req, res) {
-  db.collection(String(req.body.url.substring(1))).save(req.body, (err, result) => {
+  db.collection(String(req.body.url)).save(req.body, (err, result) => {
     if (err) return console.log(err)
     console.log('saved to database')
-    res.redirect('http://localhost:3000/#' + req.body.url)
+    res.redirect('http://localhost:3000/#/' + req.body.url.substring(0, req.body.url.length - 8) + "/comments")
   })
 })
 
 app.get('/comments', function (req, res) {
-  // db.get(req.body.url.substring(1));
-  console.log("whatever");
+  db.collection('AnabrazoontheUSMexicanbordercelebratesunitybutTrumphasLaredoworriedcomments').find(null, (err, result) => {
+    if (err) return console.log(err)
+    console.log(result);
+  });
+  // console.log(req);
 })
 
 app.all('/', function(req, res, next) {

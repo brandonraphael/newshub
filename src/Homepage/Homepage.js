@@ -13,7 +13,7 @@ class Homepage extends Component {
   render() {
     return (
       <div className="Homepage">
-      <div id="sources">Sources</div>
+        <div id="sources">Sources</div>
         <div id="sourceList">
           <a href="#/abc-news-au">ABC News AU</a>
           <br/>
@@ -57,9 +57,9 @@ class Homepage extends Component {
         </div>
         <div id="tabs">
           <Tabs defaultActiveKey={1} animation={false} id="noanim-tab">
-            <Tab eventKey={1} title="Newest"><div id="new"><LinkList source="the-washington-post"></LinkList></div></Tab>
-            <Tab eventKey={2} title="Most Viewed">Popular</Tab>
-            <Tab eventKey={3} title="Most Commented">Hot</Tab>
+            <Tab eventKey={1} title="Engadget"><div id="side"><LinkList source="engadget"></LinkList></div></Tab>
+            <Tab eventKey={2} title="Ars Technica"><div id="side"><LinkList source="ars-technica"></LinkList></div></Tab>
+            <Tab eventKey={3} title="BBC News"><div id="side"><LinkList source="bbc-news"></LinkList></div></Tab>
           </Tabs>
         </div>
       </div>

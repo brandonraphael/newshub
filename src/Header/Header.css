@@ -14,10 +14,16 @@
 
 #searchBar {
   text-align: right;
-  left: -15px;
+  right: 15px;
   top: 4px;
-  position: relative;
+  position: absolute;
   z-index: 3;
+}
+
+#header {
+  margin: auto;
+  position: absolute;
+  left: calc(50% - 50px);
 }
 
 #bar {

@@ -25,13 +25,7 @@ class Comments extends Component {
   render() {
     return (
       <div className="Comments">
-        <div>{this.cleanCode(this.props.location.pathname)}</div>
-        <form id="addComment" name="comment" action="http://localhost:8000/comments" method="post">
-          <input type="text" name="comment" id="comment"/>
-          <input type="hidden" name="url" value={this.cleanCode(this.props.location.pathname)}/>
-          <input type="submit"/>
-        </form>
-        <div>{this.state.comments}</div>
+        Coming Soon!
       </div>
     );
   }
