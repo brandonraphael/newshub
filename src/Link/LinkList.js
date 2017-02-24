@@ -18,10 +18,16 @@ class LinkList extends Component {
     else return this.props.source;
   }
 
+  determineType() {
+    if (!this.props.type) return this.props.route.type;
+    else return this.props.type;
+  }
+
   componentDidMount() {
     var src = this.determineSource();
+    var type = this.determineType();
 
-    $.get('https://newsapi.org/v1/articles?source=' + src + '&sortBy=top&apiKey=75068dfcd79b413186fa380de6150f1e').done(function(data) {
+    $.get('https://newsapi.org/v1/articles?source=' + src + '&sortBy=' + type + '&apiKey=75068dfcd79b413186fa380de6150f1e').done(function(data) {
       this.setState({data: data});
     }.bind(this));
   }

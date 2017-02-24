@@ -1,6 +1,6 @@
 .Homepage {
   position: relative;
-  top: 35px;
+  top: 0px;
   text-align: left;
   left: 0px;
 }
@@ -10,6 +10,7 @@
   text-align: center;
   width: 175px;
   left: 0px;
+  top: 5px;
   padding: 10.5px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -21,12 +22,12 @@
   width: calc(100% - 175px);
   position: absolute;
   left: 175px;
-  top: 0px;
+  top: 36px;
 }
 
 #sourceList {
   position: relative;
-  top: 0px;
+  top: 5px;
   left: 10px;
   width: 175px;
   padding-top: 10px;

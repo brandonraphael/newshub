@@ -1,7 +1,7 @@
 .LinkList {
   position: relative;
   width: 100%;
-  top: 35px;
+  top: 10px;
   z-index: 1;
   left: 10px;
   width: calc(100% - 20px);
