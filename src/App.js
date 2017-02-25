@@ -28,6 +28,19 @@ class App extends Component {
           <Route path='/engadget' component={Newspage} source="engadget"/>
           <Route path='/entertainment-weekly' component={Newspage} source="entertainment-weekly"/>
           <Route path='/espn' component={Newspage} source="espn"/>
+          <Route path='/espn-cric-info' component={Newspage} source="espn-cric-info"/>
+          <Route path='/financial-times' component={Newspage} source="financial-times"/>
+          <Route path='/focus' component={Newspage} source="focus"/>
+          <Route path='/fortune' component={Newspage} source="fortune"/>
+          <Route path='/google-news' component={Newspage} source="google-news"/>
+          <Route path='/hacker-news' component={Newspage} source="hacker-news"/>
+          <Route path='/ign' component={Newspage} source="ign"/>
+          <Route path='/independent' component={Newspage} source="independent"/>
+          <Route path='/mashable' component={Newspage} source="mashable"/>
+          <Route path='/metro' component={Newspage} source="metro"/>
+          <Route path='/mirror' component={Newspage} source="mirror"/>
+          <Route path='/mtv-news' component={Newspage} source="mtv-news"/>
+          <Route path='/mtv-news-uk' component={Newspage} source="mtv-news-uk"/>
           <Route path='/the-guardian-uk' component={Newspage} source="the-guardian-uk"/>
           <Route path='/the-new-york-times' component={Newspage} source="the-new-york-times"/>
           <Route path='/the-wall-street-journal' component={Newspage} source="the-wall-street-journal"/>

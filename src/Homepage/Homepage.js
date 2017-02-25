@@ -49,6 +49,32 @@ class Homepage extends Component {
           <br/>
           <a href="#/espn">ESPN</a>
           <br/>
+          <a href="#/espn-cric-info">ESPN cricinfo</a>
+          <br/>
+          <a href="#/financial-times">Financial Times</a>
+          <br/>
+          <a href="#/focus">Focus</a>
+          <br/>
+          <a href="#/fortune">Fortune</a>
+          <br/>
+          <a href="#/google-news">Google News</a>
+          <br/>
+          <a href="#/hacker-news">Hacker News</a>
+          <br/>
+          <a href="#/ign">IGN</a>
+          <br/>
+          <a href="#/independent">Independent</a>
+          <br/>
+          <a href="#/Mashable">Mashable</a>
+          <br/>
+          <a href="#/metro">Metro</a>
+          <br/>
+          <a href="#/mirror">Daily Mirror</a>
+          <br/>
+          <a href="#/mtv-news">MTV News</a>
+          <br/>
+          <a href="#/mtv-news-uk">MTV News UK</a>
+          <br/>
           <a href="#/the-guardian-uk">The Guardian (UK)</a>
           <br/>
           <a href="#/the-new-york-times">The New York Times</a>
