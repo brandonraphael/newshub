@@ -41,6 +41,13 @@
   transition: none;
 }
 
+.panel {
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  border-radius: 0px;
+}
+
 #body {
   position: relative;
   top: 5px;
