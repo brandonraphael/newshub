@@ -5,8 +5,12 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <a href="#/" id="home">Home</a>
-        <div id="title">Newsio</div>
+        <div id="title">
+              <a id="temp" href="#/">
+                <img id="logo" alt="check" src={require("../../public/news.png")}/>
+                  Newsio
+                </a>
+        </div>
         <form id="searchBar">
           <input type="text" name="name" id="bar"/>
         </form>
