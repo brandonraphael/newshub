@@ -8,7 +8,7 @@
 #sources {
   position: relative;
   text-align: center;
-  width: 175px;
+  width: 100%;
   left: 0px;
   top: 5px;
   padding: 10.5px;
@@ -19,7 +19,6 @@
 }
 
 #tabs {
-  width: calc(100% - 175px);
   position: absolute;
   left: 175px;
   top: 36px;
@@ -29,7 +28,7 @@
   position: relative;
   top: 5px;
   left: 10px;
-  width: 175px;
+  width: 100%;
   padding-top: 10px;
 }
 
