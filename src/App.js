@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, hashHistory} from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import Homepage from './Homepage/Homepage';
 import Newspage from './Newspage/Newspage.js';
 import Commentspage from './Comments/Commentspage';
@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router history={hashHistory}>
+        <Router history={browserHistory}>
           <Route path='/' component={Homepage} />
           <Route path='/abc-news-au' component={Newspage} source="abc-news-au"/>
           <Route path='/ars-technica' component={Newspage} source="ars-technica"/>

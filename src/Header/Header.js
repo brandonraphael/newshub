@@ -29,7 +29,7 @@ class Header extends Component {
     return (
       <div className="Header">
         <div id="title">
-          <a id="temp" href="#/">
+          <a id="temp" href="/">
             <img id="logo" alt="check" src={require("../../public/news.png")}/>
             Newsio
           </a>
@@ -40,69 +40,69 @@ class Header extends Component {
         <div id="sourcesBox" style={this.expandCollapse()}>
           <div id="sources">Sources</div>
           <div id="sourceList">
-            <a href="#/abc-news-au">ABC News AU</a>
+            <a href="/abc-news-au">ABC News AU</a>
             <br/>
-            <a href="#/ars-technica">Ars Technica</a>
+            <a href="/ars-technica">Ars Technica</a>
             <br/>
-            <a href="#/associated-press">Associated Press</a>
+            <a href="/associated-press">Associated Press</a>
             <br/>
-            <a href="#/bbc-news">BBC News</a>
+            <a href="/bbc-news">BBC News</a>
             <br/>
-            <a href="#/bbc-sport">BBC Sport</a>
+            <a href="/bbc-sport">BBC Sport</a>
             <br/>
-            <a href="#/bloomberg">Bloomberg</a>
+            <a href="/bloomberg">Bloomberg</a>
             <br/>
-            <a href="#/business-insider">Business Insider</a>
+            <a href="/business-insider">Business Insider</a>
             <br/>
-            <a href="#/business-insider-uk">Business Insider UK</a>
+            <a href="/business-insider-uk">Business Insider UK</a>
             <br/>
-            <a href="#/buzzfeed">Buzzfeed</a>
+            <a href="/buzzfeed">Buzzfeed</a>
             <br/>
-            <a href="#/cnbc">CNBC</a>
+            <a href="/cnbc">CNBC</a>
             <br/>
-            <a href="#/cnn">CNN</a>
+            <a href="/cnn">CNN</a>
             <br/>
-            <a href="#/daily-mail">Daily Mail</a>
+            <a href="/daily-mail">Daily Mail</a>
             <br/>
-            <a href="#/engadget">Engadget</a>
+            <a href="/engadget">Engadget</a>
             <br/>
-            <a href="#/entertainment-weekly">Entertainment Weekly</a>
+            <a href="/entertainment-weekly">Entertainment Weekly</a>
             <br/>
-            <a href="#/espn">ESPN</a>
+            <a href="/espn">ESPN</a>
             <br/>
-            <a href="#/espn-cric-info">ESPN cricinfo</a>
+            <a href="/espn-cric-info">ESPN cricinfo</a>
             <br/>
-            <a href="#/financial-times">Financial Times</a>
+            <a href="/financial-times">Financial Times</a>
             <br/>
-            <a href="#/focus">Focus</a>
+            <a href="/focus">Focus</a>
             <br/>
-            <a href="#/fortune">Fortune</a>
+            <a href="/fortune">Fortune</a>
             <br/>
-            <a href="#/google-news">Google News</a>
+            <a href="/google-news">Google News</a>
             <br/>
-            <a href="#/hacker-news">Hacker News</a>
+            <a href="/hacker-news">Hacker News</a>
             <br/>
-            <a href="#/ign">IGN</a>
+            <a href="/ign">IGN</a>
             <br/>
-            <a href="#/independent">Independent</a>
+            <a href="/independent">Independent</a>
             <br/>
-            <a href="#/Mashable">Mashable</a>
+            <a href="/Mashable">Mashable</a>
             <br/>
-            <a href="#/metro">Metro</a>
+            <a href="/metro">Metro</a>
             <br/>
-            <a href="#/mirror">Daily Mirror</a>
+            <a href="/mirror">Daily Mirror</a>
             <br/>
-            <a href="#/mtv-news">MTV News</a>
+            <a href="/mtv-news">MTV News</a>
             <br/>
-            <a href="#/mtv-news-uk">MTV News UK</a>
+            <a href="/mtv-news-uk">MTV News UK</a>
             <br/>
-            <a href="#/the-guardian-uk">The Guardian (UK)</a>
+            <a href="/the-guardian-uk">The Guardian (UK)</a>
             <br/>
-            <a href="#/the-new-york-times">The New York Times</a>
+            <a href="/the-new-york-times">The New York Times</a>
             <br/>
-            <a href="#/the-wall-street-journal">The Wall Street Journal</a>
+            <a href="/the-wall-street-journal">The Wall Street Journal</a>
             <br/>
-            <a href="#/the-washington-post">The Washington Post</a>
+            <a href="/the-washington-post">The Washington Post</a>
           </div>
         </div>
         <form id="searchBar">
