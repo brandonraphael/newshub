@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Router history={browserHistory}>
           <Route path='/' component={Homepage} />
           <Route path='/abc-news-au' component={Newspage} source="abc-news-au"/>
