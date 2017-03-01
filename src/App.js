@@ -17,7 +17,6 @@ class App extends Component {
           <Route path='/associated-press' component={Newspage} source="associated-press"/>
           <Route path='/bbc-news' component={Newspage} source="bbc-news"/>
           <Route path='/bbc-sport' component={Newspage} source="bbc-sport"/>
-          <Route path='/bild' component={Newspage} source="bild"/>
           <Route path='/bloomberg' component={Newspage} source="bloomberg"/>
           <Route path='/business-insider' component={Newspage} source="business-insider"/>
           <Route path='/business-insider-uk' component={Newspage} source="business-insider-uk"/>

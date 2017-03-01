@@ -5,33 +5,6 @@
   left: 0px;
 }
 
-#sources {
-  position: relative;
-  text-align: center;
-  width: 100%;
-  left: 0px;
-  top: 5px;
-  padding: 10.5px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #e0e0e0;
-  font-weight: bold;
-}
-
-#tabs {
-  position: absolute;
-  left: 175px;
-  top: 36px;
-}
-
-#sourceList {
-  position: relative;
-  top: 5px;
-  left: 10px;
-  width: 100%;
-  padding-top: 10px;
-}
-
 #side {
   position: relative;
   top: 0px;

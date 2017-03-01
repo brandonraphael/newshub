@@ -2,7 +2,7 @@
   white-space: wrap;
   position: relative;
   width: 100%;
-  min-height: 31px;
+  height: 31px;
   background-color: lightgrey;
   z-index: 2;
   border-style: solid;
@@ -22,12 +22,12 @@
 }
 
 #title {
-  text-align: center;
+  text-align: left;
   position: relative;
   display: inline-block;
   font-size: 20px;
-  width: calc(100% - 150px);
-  min-width: 80px;
+  width: 95px;
+  left: 5px;
   top: 3px;
 }
 
@@ -35,12 +35,6 @@
   text-align: center;
   color: black;
   text-decoration: none;
-}
-
-#spacer {
-  text-align: center;
-  color: black;
-  width: 150px;
 }
 
 #searchBar {
@@ -55,4 +49,47 @@
   border-style: hidden;
   border-radius: 2px;
   width: calc(100% - 10px);
+}
+
+#sourcesButton {
+  left: 0px;
+}
+
+#sourcesBox {
+  position: absolute;
+  background-color: white;
+  z-index: 8;
+  top: 31px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+}
+
+#sources {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  top: 4px;
+  padding: 10.5px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e0e0e0;
+  font-weight: bold;
+}
+
+#tabs {
+  position: absolute;
+  left: 5px;
+  top: 36px;
+  width: calc(100% - 5px);
+}
+
+#sourceList {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
