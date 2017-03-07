@@ -4,8 +4,6 @@ import Homepage from './Homepage/Homepage';
 import Newspage from './Newspage/Newspage.js';
 import Commentspage from './Comments/Commentspage';
 
-import './App.css';
-
 class App extends Component {
   render() {
     return (

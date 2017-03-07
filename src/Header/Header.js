@@ -35,7 +35,7 @@ class Header extends Component {
           </a>
         </div>
         <button id="sourcesButton" onClick={this.handleClick}>
-          {this.state.isToggleOn ? String.fromCharCode(8681) : String.fromCharCode(8679)}
+          {this.state.isToggleOn ? "Sources " + String.fromCharCode(9660) : "Sources " + String.fromCharCode(9650)}
         </button>
         <div id="sourcesBox" style={this.expandCollapse()}>
           <div id="sources">Sources</div>
