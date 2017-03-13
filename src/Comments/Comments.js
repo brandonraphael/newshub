@@ -26,8 +26,7 @@ class Comments extends Component {
     return (
       <div className="Comments">
         Coming Soon!
-        <object type="text/html" data="https://www.yahoo.com"></object>        {/*<div>{this.props.pathname}</div>
-        <form id="addComment" name="comment" action="http://localhost:8000/comments" method="post">
+        {/*}<form id="addComment" name="comment" action="http://localhost:8000/comments" method="post">
           <input type="text" name="comment" id="comment"/>
           <input type="hidden" name="url" value={this.props.pathname}/>
           <input type="submit"/>
