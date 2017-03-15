@@ -105,9 +105,9 @@ class Header extends Component {
             <a href="/the-washington-post">The Washington Post</a>
           </div>
         </div>
-        <form id="searchBar">
+{/*        <form id="searchBar">
           <input type="text" name="name" id="bar"/>
-        </form>
+        </form>*/}
       </div>
     );
   }

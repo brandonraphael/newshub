@@ -17,9 +17,9 @@ class CollapsiblePanel extends Component {
         <Button id="button"  bsSize="xsmall" onClick={ ()=> this.setState({ open: !this.state.open })}>
           description
         </Button>
-        <a href={"/" + this.props.article.title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s/g,"") + "/comments"} id="comments">
+        {/*<a href={"/" + this.props.article.title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s/g,"") + "/comments"} id="comments">
           comments
-        </a>
+        </a>*/}
         <div id="body">
           <Panel collapsible expanded={this.state.open} id="panel">
             {this.props.article.description}
